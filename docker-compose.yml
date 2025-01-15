@@ -1,0 +1,9 @@
+services:
+  corporate-hub:
+    image: lotus
+    container_name: lotus
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 1488:80
