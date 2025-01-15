@@ -1,0 +1,24 @@
+{
+  "name": "lotus",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@morev/vue-transitions": "^3.0.5",
+    "lodash": "^4.17.21",
+    "luxon": "^3.5.0",
+    "reset-css": "^5.0.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "sass-embedded": "^1.83.4",
+    "vite": "^6.0.5"
+  }
+}
