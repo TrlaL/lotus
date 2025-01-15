@@ -3,6 +3,7 @@
     <input
       class="ui-input__inner"
       v-maska="{ mask }"
+      :inputmode="inputmode"
       :placeholder="placeholder"
       :type="type"
       @maska="onMaska"
@@ -19,6 +20,7 @@ export default {
   },
 
   props: {
+    inputmode: { default: null, type: String },
     mask: { default: null },
     modelValue: { required: true },
     placeholder: { default: null },

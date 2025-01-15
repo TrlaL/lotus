@@ -5,9 +5,9 @@
         введите свою дату для раскрытия цифрового лотоса жизни
       </section>
       <ui-input
+        inputmode="numeric"
         mask="##.##.####"
         placeholder="ДД.ММ.ГГГГ"
-        type="number"
         v-model="date"
       ></ui-input>
       <ui-link name="Lotus" :query="{ date }">
