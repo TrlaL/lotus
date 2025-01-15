@@ -90,7 +90,7 @@ export default {
 </script>
 
 <style lang="scss">
-$size: clamp(25px, 4dvw, 45px);
+$size: clamp(20px, 4dvw, 45px);
 
 .lotus {
   align-items: safe center;
