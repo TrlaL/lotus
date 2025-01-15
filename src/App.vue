@@ -15,13 +15,9 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'reset-css/sass/_reset.scss';
-@import '@morev/vue-transitions/styles';
-
-@font-face {
-  font-family: FoglihtenNo06; 
-  src: url('/assets/fonts/FoglihtenNo06.otf');
-} 
+@use 'reset-css/sass/_reset.scss';
+@use '@morev/vue-transitions/styles';
+@use '@/assets/styles/scss/app.scss';
 
 .app {
   font-family: FoglihtenNo06;

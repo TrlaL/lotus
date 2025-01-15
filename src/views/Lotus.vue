@@ -4,7 +4,7 @@
       <section class="lotus__container">
         <ui-image
           class="lotus__image"
-          src="/assets/images/svg/lotus.svg"
+          src="/assets/images/png/lotus.png"
         ></ui-image>
         <transition-scale
           class="lotus__numbers"
@@ -14,6 +14,7 @@
             class="lotus__number"
             v-for="number, key in numbers"
             :data-key="key"
+            :key="key"
           >
             {{ number }}
           </section>
@@ -72,26 +73,31 @@ export default {
       return this.$route.query.date
     },
     parsedDate () {
-      return this.$luxon.DateTime.fromISO(this.date)
+      return this.$luxon.DateTime.fromFormat(this.date, 'dd.MM.yyyy')
     }
   },
 
   mounted () {
-    this.$lodash.delay(() => {
-      this.isCalculationsEnabled = true
-    }, 500)
+    if (this.parsedDate.isValid) {
+      this.$lodash.delay(() => {
+        this.isCalculationsEnabled = true
+      }, 500)
+    } else {
+      // this.$router.replace({ name: 'Date' })
+    }
   }
 }
 </script>
 
 <style lang="scss">
-$size: clamp(20px, 4dvw, 45px);
+$size: clamp(25px, 4dvw, 45px);
 
 .lotus {
-  &__wrapper {
-    display: flex;
-    justify-content: center;
-  }
+  align-items: safe center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0 10px;
 
   &__container {
     position: relative;
@@ -123,102 +129,102 @@ $size: clamp(20px, 4dvw, 45px);
     width: $size;
 
     &[data-key=a] {
-      bottom: 5%;
+      bottom: 0%;
       left: calc(50% - #{$size / 2});
     }
 
     &[data-key=b] {
-      left: 9%;
-      top: 60%;
+      left: -1%;
+      top: 57%;
     }
 
     &[data-key=c] {
-      left: 22%;
-      top: 32%;
+      left: 15%;
+      top: 19%;
     }
 
     &[data-key=y] {
-      right: 22%;
-      top: 32%;
+      right: 15%;
+      top: 19%;
     }
 
     &[data-key=x] {
-      right: 9%;
-      top: 60%;
+      right: -1%;
+      top: 57%;
     }
 
     &[data-key=z] {
-      left: 20%;
-      top: 81%;
+      left: 15%;
+      top: 84%;
     }
 
     &[data-key=f] {
-      left: 9%;
-      top: 42%;
+      left: 0%;
+      top: 34%;
     }
 
     &[data-key=h] {
       left: calc(50% - #{$size} / 2);
-      top: 15%;
+      top: 0;
     }
 
     &[data-key=g] {
-      right: 9%;
-      top: 42%;
+      right: 0%;
+      top: 34%;
     }
 
     &[data-key=m] {
-      right: 20%;
-      top: 81%;
+      right: 15%;
+      top: 84%;
     }
 
     &[data-key=n] {
-      left: 39%;
+      left: 37%;
       top: 74%;
     }
 
     &[data-key=k] {
-      left: 25%;
-      top: 68%;
+      left: 18%;
+      top: 69%;
     }
 
     &[data-key=p] {
-      left: 22%;
-      top: 54%;
+      left: 15%;
+      top: 50%;
     }
 
     &[data-key=w] {
-      left: 24%;
-      top: 43%;
+      left: 18%;
+      top: 35%;
     }
 
     &[data-key=s] {
-      left: 37%;
-      top: 40%;
+      left: 35%;
+      top: 32%;
     }
 
     &[data-key=o] {
-      right: 37%;
-      top: 40%;
+      right: 35%;
+      top: 32%;
     }
 
     &[data-key=e] {
-      right: 24%;
-      top: 43%;
+      right: 18%;
+      top: 35%;
     }
 
     &[data-key=x1] {
-      right: 22%;
-      top: 54%;
+      right: 15%;
+      top: 50%;
     }
 
     &[data-key=x2] {
-      right: 25%;
-      top: 68%;
+      right: 18%;
+      top: 69%;
     }
 
     &[data-key=m1] {
-      right: 39%;
+      right: 37%;
       top: 74%;
     }
 
@@ -228,23 +234,23 @@ $size: clamp(20px, 4dvw, 45px);
     }
 
     &[data-key=zf] {
-      left: 30%;
-      top: 56%;
+      left: 25%;
+      top: 52%;
     }
 
     &[data-key=fh] {
-      left: 32%;
-      top: 44%;
+      left: 28%;
+      top: 37%;
     }
 
     &[data-key=hg] {
-      right: 32%;
-      top: 44%;
+      right: 28%;
+      top: 37%;
     }
 
     &[data-key=gm] {
-      right: 30%;
-      top: 56%;
+      right: 25%;
+      top: 52%;
     }
   }
 }
