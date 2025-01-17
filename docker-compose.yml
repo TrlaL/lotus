@@ -7,3 +7,4 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - 1488:80
+    restart: always
