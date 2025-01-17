@@ -2,6 +2,7 @@
   <main class="ui-input">
     <input
       class="ui-input__inner"
+      v-bind="$attrs"
       v-maska="{ mask }"
       :inputmode="inputmode"
       :placeholder="placeholder"

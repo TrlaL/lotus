@@ -9,6 +9,7 @@
         mask="##.##.####"
         placeholder="ДД.ММ.ГГГГ"
         v-model="date"
+        @keydown.enter="push"
       ></ui-input>
       <ui-link name="Lotus" :query="{ date }">
         <ui-button :disabled="!parsedDate.isValid">
@@ -34,6 +35,12 @@ export default {
       } else {
         return { isValid: false }
       }
+    }
+  },
+
+  methods: {
+    push () {
+      this.$router.push({ name: 'Lotus', query: { date: this.date }})
     }
   }
 }
