@@ -20,7 +20,7 @@ export default {
 @use '@/assets/styles/scss/app.scss';
 
 .app {
-  font-family: FoglihtenNo06;
+  font-family: FoglihtenNo06, 'Times New Roman';
   height: 100dvh;
   overflow: hidden;
   width: 100dvw;

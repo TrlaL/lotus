@@ -1,6 +1,8 @@
 <template>
   <main class="default-layout">
-    <router-view></router-view>
+    <transition-slide>
+      <router-view></router-view>
+    </transition-slide>
   </main>
 </template>
 
