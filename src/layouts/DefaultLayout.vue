@@ -1,8 +1,10 @@
 <template>
   <main class="default-layout">
-    <transition-slide>
-      <router-view></router-view>
-    </transition-slide>
+    <router-view v-slot="{ Component }">
+      <transition-slide>
+        <component :is="Component" />
+      </transition-slide>
+    </router-view>
   </main>
 </template>
 

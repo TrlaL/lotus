@@ -184,152 +184,160 @@ export default {
     a: {
       immediate: true,
       handler (a) {
-        this.$emit('update:a', a)
+        this.update('update:a', a)
       }
     },
     b: {
       immediate: true,
       handler (b) {
-        this.$emit('update:b', b)
+        this.update('update:b', b)
       }
     },
     c: {
       immediate: true,
       handler (c) {
-        this.$emit('update:c', c)
+        this.update('update:c', c)
       }
     },
     y: {
       immediate: true,
       handler (y) {
-        this.$emit('update:y', y)
+        this.update('update:y', y)
       }
     },
     x: {
       immediate: true,
       handler (x) {
-        this.$emit('update:x', x)
+        this.update('update:x', x)
       }
     },
     z: {
       immediate: true,
       handler (z) {
-        this.$emit('update:z', z)
+        this.update('update:z', z)
       }
     },
     f: {
       immediate: true,
       handler (f) {
-        this.$emit('update:f', f)
+        this.update('update:f', f)
       }
     },
     h: {
       immediate: true,
       handler (h) {
-        this.$emit('update:h', h)
+        this.update('update:h', h)
       }
     },
     g: {
       immediate: true,
       handler (g) {
-        this.$emit('update:g', g)
+        this.update('update:g', g)
       }
     },
     m: {
       immediate: true,
       handler (m) {
-        this.$emit('update:m', m)
+        this.update('update:m', m)
       }
     },
     n: {
       immediate: true,
       handler (n) {
-        this.$emit('update:n', n)
+        this.update('update:n', n)
       }
     },
     k: {
       immediate: true,
       handler (k) {
-        this.$emit('update:k', k)
+        this.update('update:k', k)
       }
     },
     p: {
       immediate: true,
       handler (p) {
-        this.$emit('update:p', p)
+        this.update('update:p', p)
       }
     },
     w: {
       immediate: true,
       handler (w) {
-        this.$emit('update:w', w)
+        this.update('update:w', w)
       }
     },
     s: {
       immediate: true,
       handler (s) {
-        this.$emit('update:s', s)
+        this.update('update:s', s)
       }
     },
     o: {
       immediate: true,
       handler (o) {
-        this.$emit('update:o', o)
+        this.update('update:o', o)
       }
     },
     e: {
       immediate: true,
       handler (e) {
-        this.$emit('update:e', e)
+        this.update('update:e', e)
       }
     },
     x1: {
       immediate: true,
       handler (x1) {
-        this.$emit('update:x1', x1)
+        this.update('update:x1', x1)
       }
     },
     x2: {
       immediate: true,
       handler (x2) {
-        this.$emit('update:x2', x2)
+        this.update('update:x2', x2)
       }
     },
     m1: {
       immediate: true,
       handler (m1) {
-        this.$emit('update:m1', m1)
+        this.update('update:m1', m1)
       }
     },
     zm: {
       immediate: true,
       handler (zm) {
-        this.$emit('update:zm', zm)
+        this.update('update:zm', zm)
       }
     },
     zf: {
       immediate: true,
       handler (zf) {
-        this.$emit('update:zf', zf)
+        this.update('update:zf', zf)
       }
     },
     fh: {
       immediate: true,
       handler (fh) {
-        this.$emit('update:fh', fh)
+        this.update('update:fh', fh)
       }
     },
     hg: {
       immediate: true,
       handler (hg) {
-        this.$emit('update:hg', hg)
+        this.update('update:hg', hg)
       }
     },
     gm: {
       immediate: true,
       handler (gm) {
-        this.$emit('update:gm', gm)
+        this.update('update:gm', gm)
       }
+    }
+  },
+
+  methods: {
+    update (key, value) {
+      this.$lodash.delay(() => {
+        this.$emit(key, value)
+      }, this.$tools.randomIntFromInterval(0, 500))
     }
   }
 }
