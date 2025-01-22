@@ -18,7 +18,7 @@ export default {
       }
     },
     c () {
-      if (this.$tools.sumDigits(this.$tools.sumDigits(this.parsedDate.year)) > 22) {
+      if (this.$tools.sumDigits(this.parsedDate.year) > 22) {
         return this.$tools.sumDigits(this.$tools.sumDigits(this.parsedDate.year))
       } else {
         return this.$tools.sumDigits(this.parsedDate.year)
