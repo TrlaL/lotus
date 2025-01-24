@@ -5,6 +5,7 @@ import App from '@/App'
 
 // modules
 import { plugin as vueTransitionsPlugin } from '@morev/vue-transitions'
+import { PerfectScrollbarPlugin } from 'vue3-perfect-scrollbar'
 
 // plugins
 import lodash from '@/plugins/lodash'
@@ -17,6 +18,7 @@ const router = createRouter()
 
 app.use(router)
 app.use(vueTransitionsPlugin({}))
+app.use(PerfectScrollbarPlugin)
 app.use(lodash)
 app.use(luxon)
 app.use(tools)

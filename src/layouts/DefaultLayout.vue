@@ -1,11 +1,11 @@
 <template>
-  <main class="default-layout">
+  <ui-scrollbar class="default-layout">
     <router-view v-slot="{ Component }">
       <transition-slide>
         <component :is="Component" />
       </transition-slide>
     </router-view>
-  </main>
+  </ui-scrollbar>
 </template>
 
 <style lang="scss">

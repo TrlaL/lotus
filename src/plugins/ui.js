@@ -7,5 +7,6 @@ export default {
     app.component('ui-input', defineAsyncComponent(() => import('@/ui/UIInput')))
     app.component('ui-link', defineAsyncComponent(() => import('@/ui/UILink')))
     app.component('ui-meter', defineAsyncComponent(() => import('@/ui/UIMeter')))
+    app.component('ui-scrollbar', defineAsyncComponent(() => import('@/ui/UIScrollbar')))
   }
 }
