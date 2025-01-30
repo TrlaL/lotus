@@ -25,6 +25,7 @@ export default {
   cursor: pointer;
   font-family: inherit;
   font-size: 25px;
+  line-height: 30px;
   outline: none;
   padding: 20px;
 
