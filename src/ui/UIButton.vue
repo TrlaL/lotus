@@ -24,8 +24,8 @@ export default {
   color: #544540;
   cursor: pointer;
   font-family: inherit;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: clamp(25px, 2dvw, 45px);
+  line-height: clamp(30px, 2.5dvw, 50px);
   outline: none;
   padding: 20px;
 
