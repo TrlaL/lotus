@@ -50,6 +50,7 @@ $size: clamp(20px, 4dvw, 45px);
   &__number {
     align-items: center;
     background: url('/assets/images/png/background.png'), #55443D;
+    border: 1px solid #926857;
     border-radius: 100px;
     color: #FFF;
     display: flex;
