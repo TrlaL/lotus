@@ -184,14 +184,14 @@ export default {
   }
 
   &__group-title {
-    font-size: clamp(25px, 2dvw, 35px);
-    line-height: clamp(30px, 3dvw, 40px);
+    font-size: clamp(25px, 3dvw, 45px);
+    line-height: clamp(30px, 3.5dvw, 50px);
     text-align: center;
   }
 
   &__group-description {
-    font-size: clamp(25px, 2dvw, 35px);
-    line-height: clamp(30px, 3dvw, 40px);
+    font-size: clamp(25px, 3dvw, 45px);
+    line-height: clamp(30px, 3.5dvw, 50px);
     text-align: center;
   }
 
