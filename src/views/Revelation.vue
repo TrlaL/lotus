@@ -167,7 +167,7 @@ export default {
   height: 100%;
   gap: 10px;
   justify-content: center;
-  margin: 10px;
+  margin: 40px 10px;
 
   &__wrapper {
     display: flex;
