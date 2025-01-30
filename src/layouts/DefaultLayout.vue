@@ -1,5 +1,5 @@
 <template>
-  <ui-scrollbar class="default-layout">
+  <ui-scrollbar class="default-layout" :tick="tick">
     <router-view v-slot="{ Component }">
       <transition-slide>
         <component :is="Component" />
@@ -7,6 +7,28 @@
     </router-view>
   </ui-scrollbar>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      tick: 0
+    }
+  },
+
+  computed: {
+    routeName () {
+      return this.$route.name
+    }
+  },
+
+  watch: {
+    routeName () {
+      this.tick += 1
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 .default-layout {

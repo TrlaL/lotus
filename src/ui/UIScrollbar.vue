@@ -1,6 +1,7 @@
 <template>
   <perfect-scrollbar
     class="ui-scrollbar"
+    ref="ui-scrollbar"
     :options="options"
     :tag="tag"
   >
@@ -12,7 +13,20 @@
 export default {
   props: {
     options: { default: null, type: Object },
-    tag: { default: 'main', type: String }
+    tag: { default: 'main', type: String },
+    tick: { default: 0, type: Number }
+  },
+
+  watch: {
+    tick () {
+      this.setScrollTop(0)
+    }
+  },
+
+  methods: {
+    setScrollTop (scrollTop) {
+      this.$refs['ui-scrollbar'].$el.scrollTop = scrollTop
+    }
   }
 }
 </script>
