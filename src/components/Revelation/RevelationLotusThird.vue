@@ -72,7 +72,7 @@ $size: clamp(20px, 4dvw, 45px);
 
     &[data-key=z] {
       left: 15%;
-      top: 80%;
+      top: 82%;
     }
 
     &[data-key=p] {
