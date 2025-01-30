@@ -1,7 +1,7 @@
 <template>
   <img
     class="ui-image"
-    :src="src"
+    v-lazy="src"
   >
 </template>
 
@@ -12,3 +12,17 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.ui-image {
+  transition-duration: 0.5s;
+
+  &[lazy=loading] {
+    opacity: 0;
+  }
+
+  &[lazy=loaded] {
+    opacity: 1;
+  }
+}
+</style>

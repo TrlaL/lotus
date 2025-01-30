@@ -4,6 +4,7 @@ import { createRouter } from '@/router'
 import App from '@/App'
 
 // modules
+import VueLazyLoad from 'vue3-lazyload'
 import { plugin as vueTransitionsPlugin } from '@morev/vue-transitions'
 import { PerfectScrollbarPlugin } from 'vue3-perfect-scrollbar'
 
@@ -17,6 +18,7 @@ const app = createApp(App)
 const router = createRouter()
 
 app.use(router)
+app.use(VueLazyLoad)
 app.use(vueTransitionsPlugin({}))
 app.use(PerfectScrollbarPlugin)
 app.use(lodash)
