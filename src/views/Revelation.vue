@@ -3,10 +3,10 @@
     <section class="revelation__wrapper">
       <section class="revelation__group">
         <section class="revelation__group-title">
-          С 0 ДО 18 ЛЕТ
+         с 0 до 18 лет
         </section>
         <section class="revelation__group-description">
-          ЛОТОС ЖИЗНИ ЗАКРЫТЫЙ, ТАК КАК ЧЕЛОВЕК НАХОДИТСЯ ПО КАРМОЙ СВОИХ РОДИТЕЛЕЙ
+          лотос жизни закрытый, так как человек находится под кармой своих родителей
         </section>
         <section class="revelation__group-body">
           <revelation-lotus-first
@@ -16,10 +16,10 @@
       </section>
       <section class="revelation__group">
         <section class="revelation__group-title">
-          С 18 ДО 25 ЛЕТ
+          с 18 до 25 лет
         </section>
         <section class="revelation__group-description">
-          У ЧЕЛОВЕКА ПОЯВЛЯЕТСЯ ДОСТУП К ЕГО ПЕРВОМУ ЖИЗНЕННОМУ ЦИКЛУ И ОН ИМЕННУЕТСЯ КАК "ЦИКЛ ЛИЧНОСТНОГО РОСТА"
+          у человека открывается доступ к его первому жизненному циклу и он наименуется как "цикл личностного роста"
         </section>
         <section class="revelation__group-body">
           <revelation-lotus-second
