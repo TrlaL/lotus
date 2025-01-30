@@ -1,15 +1,15 @@
 <template>
-  <main class="revelation-lotus-second">
+  <main class="revelation-lotus-sixth">
     <ui-image
-      class="revelation-lotus-second__image"
-      src="/assets/images/png/18-25.png"
+      class="revelation-lotus-sixth__image"
+      src="/assets/images/png/45-99.png"
     ></ui-image>
     <transition-scale
-      class="revelation-lotus-second__numbers"
+      class="revelation-lotus-sixth__numbers"
       group
       tag="section">
       <section
-        class="revelation-lotus-second__number"
+        class="revelation-lotus-sixth__number"
         v-for="number, key in numbers"
         :data-key="key"
         :key="key"
@@ -31,12 +31,11 @@ export default {
 <style lang="scss">
 $size: clamp(20px, 4dvw, 45px);
 
-.revelation-lotus-second {
+.revelation-lotus-sixth {
   position: relative;
 
   &__image {
     height: 100%;
-    max-width: 600px;
     width: 100%;
   }
 
@@ -61,34 +60,34 @@ $size: clamp(20px, 4dvw, 45px);
     position: absolute;
     width: $size;
 
-    &[data-key=z] {
-      left: -4%;
-      top: 86%;
+    &[data-key=g] {
+      right: 4%;
+      top: 35%;
     }
 
-    &[data-key=n] {
-      left: 29%;
-      top: 77%;
-    }
-
-    &[data-key=m1] {
-      right: 29%;
-      top: 77%;
-    }
-
-    &[data-key=zm] {
-      left: calc(50% - #{$size / 2});
-      top: 70%;
-    }
-
-    &[data-key=a] {
-      bottom: 0;
-      left: calc(50% - #{$size / 2});
+    &[data-key=x] {
+      right: 3%;
+      top: 56%;
     }
 
     &[data-key=m] {
-      right: -4%;
-      top: 86%;
+      right: 18%;
+      top: 81%;
+    }
+
+    &[data-key=gm] {
+      right: 25%;
+      top: 54%;
+    }
+
+    &[data-key=x1] {
+      right: 17%;
+      top: 51%;
+    }
+
+    &[data-key=x2] {
+      right: 21%;
+      top: 68%;
     }
   }
 }

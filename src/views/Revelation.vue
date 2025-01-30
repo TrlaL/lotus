@@ -27,6 +27,58 @@
           ></revelation-lotus-second>
         </section>
       </section>
+      <section class="revelation__group">
+        <section class="revelation__group-title">
+          с 25 до 33 лет
+        </section>
+        <section class="revelation__group-description">
+          у человека открывается доступ к его первому жизненному циклу и он наименуется как "цикл духовного обошощения"
+        </section>
+        <section class="revelation__group-body">
+          <revelation-lotus-third
+            :numbers="$lodash.pick(numbers, ['f', 'b', 'z', 'p', 'k', 'zf'])"
+          ></revelation-lotus-third>
+        </section>
+      </section>
+      <section class="revelation__group">
+        <section class="revelation__group-title">
+          с 33 до 40 лет
+        </section>
+        <section class="revelation__group-description">
+          у человека открывается доступ к его третьему жизненному циклу, наименуется как "цикл финансового обогощения"
+        </section>
+        <section class="revelation__group-body">
+          <revelation-lotus-fourth
+            :numbers="$lodash.pick(numbers, ['f', 'c', 'h', 'w', 'fh', 's'])"
+          ></revelation-lotus-fourth>
+        </section>
+      </section>
+      <section class="revelation__group">
+        <section class="revelation__group-title">
+          с 40 до 45 лет
+        </section>
+        <section class="revelation__group-description">
+          у человека открывается доступ к его четвертому жизненному циклу, наименуется как "цикл любовных отношений"
+        </section>
+        <section class="revelation__group-body">
+          <revelation-lotus-fifth
+            :numbers="$lodash.pick(numbers, ['h', 'y', 'g', 'o', 'hg', 'e'])"
+          ></revelation-lotus-fifth>
+        </section>
+      </section>
+      <section class="revelation__group">
+        <section class="revelation__group-title">
+          с 45 лет
+        </section>
+        <section class="revelation__group-description">
+          у человека открывается доступ к его пятому жизненному циклу, наименуется как "цикл гармонии и долголетия"
+        </section>
+        <section class="revelation__group-body">
+          <revelation-lotus-sixth
+            :numbers="$lodash.pick(numbers, ['g', 'x', 'm', 'gm', 'x1', 'x2'])"
+          ></revelation-lotus-sixth>
+        </section>
+      </section>
     </section>
   </main>
   <calculations-common
@@ -64,12 +116,20 @@
 import CalculationsCommon from '@/common/CalculationsCommon'
 import RevelationLotusFirst from '@/components/Revelation/RevelationLotusFirst'
 import RevelationLotusSecond from '@/components/Revelation/RevelationLotusSecond'
+import RevelationLotusThird from '@/components/Revelation/RevelationLotusThird'
+import RevelationLotusFourth from '@/components/Revelation/RevelationLotusFourth'
+import RevelationLotusFifth from '@/components/Revelation/RevelationLotusFifth'
+import RevelationLotusSixth from '@/components/Revelation/RevelationLotusSixth'
 
 export default {
   components: {
     CalculationsCommon,
     RevelationLotusFirst,
-    RevelationLotusSecond
+    RevelationLotusSecond,
+    RevelationLotusThird,
+    RevelationLotusFourth,
+    RevelationLotusFifth,
+    RevelationLotusSixth
   },
 
   data () {
@@ -133,6 +193,11 @@ export default {
     font-size: clamp(25px, 2dvw, 35px);
     line-height: clamp(30px, 3dvw, 40px);
     text-align: center;
+  }
+
+  &__group-body {
+    display: flex;
+    justify-content: center;
   }
 }
 </style>
