@@ -162,7 +162,6 @@ export default {
 
 <style lang="scss">
 .revelation {
-  align-items: safe center;
   display: flex;
   height: 100%;
   gap: 10px;
