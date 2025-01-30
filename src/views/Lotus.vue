@@ -86,7 +86,7 @@ export default {
   height: 100%;
   gap: 10px;
   justify-content: center;
-  margin: 0 10px;
+  margin: 40px 20px;
 
   &__wrapper {
     align-items: center;

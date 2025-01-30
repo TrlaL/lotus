@@ -53,7 +53,7 @@ export default {
   display: flex;
   height: 100%;
   justify-content: center;
-  margin: 0 20px;
+  margin: 40px 20px;
 
   &__wrapper {
     align-items: center;
