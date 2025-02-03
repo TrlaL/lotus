@@ -32,7 +32,7 @@
           с 25 до 33 лет
         </section>
         <section class="revelation__group-description">
-          у человека открывается доступ к его первому жизненному циклу и он наименуется как "цикл духовного обошощения"
+          у человека открывается доступ к его первому жизненному циклу и он наименуется как "цикл духовного обогощения"
         </section>
         <section class="revelation__group-body">
           <revelation-lotus-third
