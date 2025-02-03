@@ -3,7 +3,7 @@ import routes from './routes'
 
 export function createRouter () {
   return vueRouter.createRouter({
-    history: vueRouter.createWebHistory(),
+    history: vueRouter.createWebHashHistory(),
     routes: routes
   })
 }
